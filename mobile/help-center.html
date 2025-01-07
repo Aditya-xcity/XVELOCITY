@@ -28,6 +28,195 @@
     color:red;
   }
 
+  * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            color: white;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: red;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .header-buttons a {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .header-buttons a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .header-buttons a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .semester-options {
+            display: inline-block;
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .semester-options h2 {
+            margin-bottom: 20px;
+        }
+
+        .semester-options a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .semester-options a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .semester-options a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            text-align: center;
+            color: red;
+        }
+
+        .block {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            margin: 10px;
+        }
+
+        .block img {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+
+            .header-buttons {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .semester-options {
+                padding: 10px;
+            }
+
+            .semester-options a {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            .semester-options a img {
+                margin-bottom: 10px;
+            }
+
+            footer {
+                padding: 5px 0;
+            }
+        }
+
 </style>     
     </head>
     
@@ -258,8 +447,8 @@
     <div class="custom-block">
         <a href="https://drive.google.com/drive/u/1/folders/13MMgJVdC45-DmMtaa1_3eQiQugomXI2C" target="_blank"> 
             <h3>PYTHON</h3> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="custom-img" style="width: 100px; height: auto;">
         </a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="custom-img" style="width: 100px; height: auto;">
         <p>Codes for python</p>
     </div>
     
@@ -267,17 +456,25 @@
     <div class="custom-block">
         <a href="https://drive.google.com/drive/folders/1zHzxk4E2p-ipN17CPkNCGbmBBMaj3gbM?usp=drive_link" target="_blank"> 
             <h3>Notes</h3> 
+            <img src="https://t4.ftcdn.net/jpg/01/01/94/51/240_F_101945192_efxgx8EbWauu9zQApKZaSeaVubiqxHuS.jpg" class="custom-img" style="width: 100px; height: auto;">
         </a>
-        <img src="https://t4.ftcdn.net/jpg/01/01/94/51/240_F_101945192_efxgx8EbWauu9zQApKZaSeaVubiqxHuS.jpg" class="custom-img" style="width: 100px; height: auto;">
         <p>Engineering Notes</p>
     </div>
 
     <div class="custom-block">
         <a href="https://drive.google.com/drive/folders/1Gaa0JaSL6CwpX-BtfBXCZKS45kk_PxEd?usp=drive_link" target="_blank"> 
             <h3>syllabus</h3> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35b9RhbKR90ni8LaRKewgmddnfjO1tixF9w&s.jpg" class="custom-img" style="width: 100px; height: auto;">
         </a>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35b9RhbKR90ni8LaRKewgmddnfjO1tixF9w&s.jpg" class="custom-img" style="width: 100px; height: auto;">
         <p>Engineering syllabus</p>
+    </div>
+
+    <div class="custom-block">
+        <a href="ok.html" target="_blank"> 
+            <h3>PYQ</h3> 
+            <img src="pyq.png" class="custom-img" style="width: 100px; height: auto;">
+        </a>
+        <p>Previous Year Questions</p>
     </div>
 
 
