@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Aditya Bhardwaj</title>
+  <style>
+    /* General Style */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      color: #f2f2f2;
+    }
+    
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #e74c3c;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gif-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .gif-container img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .btn, .back-btn {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .btn:hover, .back-btn:hover {
+      background-color: #c0392b;
+    }
+
+    footer {
+      background-color: #e74c3c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .back-btn {
+      background-color: #1c1c1c;
+      color: #e74c3c;
+      border: 2px solid #e74c3c;
+    }
+
+    .back-btn:hover {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <section>
+    <div class="content">
+      <h2>Hello! I’m Aditya Bhardwaj, an engineering enthusiast</h2>
+      <p>Welcome to my website, where I share free, high-quality notes to help students excel in their studies!</p>
+      
+      <div class="gif-container">
+        <img id="introGif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJ5MDVwemp4aW1pNmtua2oydnVvcnJmOWtoNGVzMzc1N296cDJjOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/69jvP3VXUYhr3YUYu9/giphy.gif" alt="Engineering GIF">
+      </div>
+
+      <h2>What This Website Offers</h2>
+      <p>On this page, you’ll find a variety of notes across different engineering disciplines. All notes are available for free download, so you can dive into your studies right away. I’ve designed these notes to be clear, concise, and easy to follow, making even the most challenging topics more approachable.</p>
+
+      <div class="gif-container">
+        <img id="studyGif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3o5d2Y3M2c4N2RpdXowMG45c3k1aW14N3hnN3lsdzVlMXVlbmxiZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1hXY6iNdTFpTW4je85/giphy.gif" alt="Study GIF">
+      </div>
+
+      <h2>Explore and Connect</h2>
+      <p>Feel free to explore my collection of notes, and don’t hesitate to reach out with any questions, feedback, or suggestions for additional topics you’d like to see covered. You can contact me through my email at <strong>adityabhardwajpcm@gmail.com</strong> </p>
+
+      <a href="#connect" class="btn">Explore Notes</a>
+      
+      <br>
+      <a href="physics.html" class="back-btn">Back to Home</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Thanks for stopping by, and I look forward to helping you succeed!</p>
+  </footer>
+
+  <script>
+    // Optional JavaScript to change GIF dynamically when the page is loaded or clicked
+    const gifs = [
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJ5MDVwemp4aW1pNmtua2oydnVvcnJmOWtoNGVzMzc1N296cDJjOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/69jvP3VXUYhr3YUYu9/giphy.gif",
+      "https://tenor.com/bmV1O.gif"
+    ];
+
+    let gifIndex = 0;
+    const gifElement = document.getElementById("introGif");
+
+    setInterval(() => {
+      gifElement.src = gifs[gifIndex];
+      gifIndex = (gifIndex + 1) % gifs.length;
+    }, 5000); // Change GIF every 5 seconds
+  </script>
+
+</body>
+</html>

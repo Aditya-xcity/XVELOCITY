@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MENU</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            color: white;
+        }
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        .header a.logo {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header a.active {
+            background-color: red;
+            color: white;
+        }
+        .header-right {
+            float: right;
+        }
+        #searchbar {
+            margin-left: 15%;
+            padding: 15px;
+            border-radius: 10px;
+            width: 30%;
+            transition: width 0.15s ease-in-out;
+        }
+        #searchbar:focus {
+            width: 70%;
+        }
+        #syllabusList {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .syllabus-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+        }
+        .syllabus-item a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .syllabus-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">X<FONT COLOR="red">VELOCITY </font> </a>
+       <a href="#default" class="logo"> <FONT COLOR="red"> MENU </font> </a>
+            
+        <div class="header-right">
+            <a class="active" href="">MENU BAR</a>
+            <a href="">Contact</a>
+            <a href="about.html">About</a>
+            <a href="physics.html"> HOME </a>
+        </div>
+    </div>
+
+    <div class="header">
+        <center> <font color = "black" >Unlocking Knowledge:  </font> <FONT COLOR="red"> Free Engineering Resources  </font> <center>
+    </div>
+
+    <ol id="syllabusList">
+        <li class="syllabus-item" data-name="maths">
+            Notes - all the notes you need to study for your exams
+            <a href="https://drive.google.com/drive/folders/1zHzxk4E2p-ipN17CPkNCGbmBBMaj3gbM?usp=drive_link" target="_blank">Download Resources</a>
+        </li>
+        
+        <li class="syllabus-item" data-name="maths">
+            syllabus            <a href="https://drive.google.com/drive/folders/1Gaa0JaSL6CwpX-BtfBXCZKS45kk_PxEd?usp=drive_link" target="_blank">Download Resources</a>
+        </li>
+        
+        <li class="syllabus-item" data-name="maths">
+            front pages for files            <a href="https://drive.google.com/drive/folders/1ioJhW6GsqOAY4Frd8D1VCF1wDYbBpfig?usp=drive_link" target="_blank">Download Resources</a>
+        </li>
+       
