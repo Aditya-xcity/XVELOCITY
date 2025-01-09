@@ -17,8 +17,38 @@
     header {
       background-color: #e74c3c;
       color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: black;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: #1c1c1c;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .header-links a:hover {
+      background-color: #c0392b;
     }
 
     section {
@@ -46,7 +76,8 @@
     }
 
     .gif-container img {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 8px;
     }
@@ -70,9 +101,7 @@
       color: white;
       text-align: center;
       padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 20px;
     }
 
     .back-btn {
@@ -86,12 +115,44 @@
       color: white;
     }
 
+    /* Mobile Responsiveness */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .btn, .back-btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .gif-container img {
+        width: 80%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>About Me</h1>
+    <div class="logo">
+      <span>X</span>VELOCITY
+    </div>
+    <div class="header-links">
+      <a href="https://raw.githack.com/Aditya-xcity/XVELOCITY/main/mobile/help-center.html">Home</a>
+    </div>
   </header>
 
   <section>
@@ -111,34 +172,18 @@
       </div>
 
       <h2>Explore and Connect</h2>
-      <p>Feel free to explore my collection of notes, and don’t hesitate to reach out with any questions, feedback, or suggestions for additional topics you’d like to see covered. You can contact me through my email at <strong>adityabhardwajpcm@gmail.com</strong> </p>
+      <p>Feel free to explore my collection of notes, and don’t hesitate to reach out with any questions, feedback, or suggestions for additional topics you’d like to see covered. You can contact me through my email at <strong>adityabhardwajpcm@gmail.com</strong></p>
 
-      <a href="#connect" class="btn">Explore Notes</a>
+      <a href="https://drive.google.com/drive/folders/1zHzxk4E2p-ipN17CPkNCGbmBBMaj3gbM?usp=drive_link" class="btn">Explore Notes</a>
       
       <br>
-      <a href="physics.html" class="back-btn">Back to Home</a>
+      
     </div>
   </section>
 
   <footer>
     <p>Thanks for stopping by, and I look forward to helping you succeed!</p>
   </footer>
-
-  <script>
-    // Optional JavaScript to change GIF dynamically when the page is loaded or clicked
-    const gifs = [
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJ5MDVwemp4aW1pNmtua2oydnVvcnJmOWtoNGVzMzc1N296cDJjOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/69jvP3VXUYhr3YUYu9/giphy.gif",
-      "https://tenor.com/bmV1O.gif"
-    ];
-
-    let gifIndex = 0;
-    const gifElement = document.getElementById("introGif");
-
-    setInterval(() => {
-      gifElement.src = gifs[gifIndex];
-      gifIndex = (gifIndex + 1) % gifs.length;
-    }, 5000); // Change GIF every 5 seconds
-  </script>
 
 </body>
 </html>
